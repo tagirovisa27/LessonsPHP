@@ -1,0 +1,9 @@
+{
+    "name": "isa/php-lesson",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {}
+}
