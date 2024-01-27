@@ -15,5 +15,6 @@
 @yield('content')   
 @include('layout.footer')  
 @vite('resources/js.main.js')
+<img src="{{ asset('public/images') }}">
 </body>
 </html>
