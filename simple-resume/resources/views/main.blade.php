@@ -8,7 +8,7 @@
           text of the printing and typesetting industry.</p>
       </div>
       <div>
-        <img class="introduction_img" src="images/my-img.png" alt="my-img">
+        <img class="introduction_img" src="{{Vite::asset('resources/images/my-img.png')}}" alt="my-img">
       </div>
     </div>
   </section>
@@ -17,15 +17,15 @@
       <div class="my_portfolio">
         <h1 class="my_portfolio__title">Портфолио</h1>
         <div class="my_portfolio__arrows">
-          <img class="arrows-img" src="images/arrows-left.png" alt="arrows-left">
-          <img class="arrows-img" src="images/arrows-right.png" alt="arrows-right">
+          <img class="arrows-img" src="{{Vite::asset('resources/images/arrows-left.png')}}" alt="arrows-left">
+          <img class="arrows-img" src="{{Vite::asset('resources/images/arrows-right.png')}}" alt="arrows-right">
         </div>
         <div class="my_portfolio__text-left">
           <p class="my_portfolio__text">AI DIGITAL CORPORATE PRESENTATION TEMPLATE</p>
         </div>
         <div class="my_portfolio__slide">
           <div>
-            <img src="images/slide.png" alt="slide">
+            <img src="{{Vite::asset('resources/images/slide.png')}}" alt="slide">
           </div>
           <div class="my_portfolio__information">
             <div class="my_portfolio__text-right">
@@ -50,7 +50,7 @@
             type and scrambled it to make a type specimen book.</p>
         </div>
         <div>
-          <img class="about-img" src="images/my-img.png" alt="my-img">
+          <img class="about-img" src="{{Vite::asset('resources/images/my-img.png')}}" alt="my-img">
         </div>
       </div>
     </div>

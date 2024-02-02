@@ -14,4 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/qwe', [indexController::class, 'main'])->name(name:'qwe');
 Route::get('/', [indexController::class, 'main']);
