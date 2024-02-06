@@ -2,5 +2,5 @@
 
 return [
   'items' => '',
-  'abc' => 'qwe'  
+  'abc' => 'qwe'
 ];
