@@ -2,5 +2,4 @@
 
 return [
   'items' => '',
-  'abc' => 'qwe'
 ];

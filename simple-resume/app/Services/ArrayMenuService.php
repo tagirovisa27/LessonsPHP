@@ -2,12 +2,14 @@
 
 namespace App\Services;
 
-class ArrayMenuService implements MenuServiceInterface 
+class ArrayMenuService implements MenuServiceInterface
 {
-    public function getMenu(): array 
+    public function getMenu(): array
     {
         return [
-            ['href' => route (name: 'qwe'), 'title' => 'Главная'],
+            ['href' => route (name: 'portfolio'), 'title' => 'Портфолио'],
+            ['href' => route (name: 'about'), 'title' => 'Обо мне'],
+            ['href' => route (name: 'contacts'), 'title' => 'Контакты'],
         ];
     }
 }

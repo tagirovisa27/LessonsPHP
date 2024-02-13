@@ -16,26 +16,27 @@
     <div class="wrapper">
       <div class="my_portfolio">
         <h1 class="my_portfolio__title">Портфолио</h1>
+          @foreach ($projects as $project)
+          <div class="my_portfolio__text-left">
+          <p class="my_portfolio__text">{{$project->name}}</p>
+          </div>
+        <div class="my_portfolio__slide">
+        <div>
+          <img src="{{$project->image_url}}" alt="slide">
+          </div>
+         <div class="my_portfolio__information">
+             @foreach ($project->technologies as $technology)
+         <div class="my_portfolio__text-right">
+              <p class="my_portfolio_line">{{$technology->name}}</p>
+            </div>
+             @endforeach
+              <button class="my_portfolio_btn">Посмотреть</button>
+            </div>
+          </div>
+        @endforeach
         <div class="my_portfolio__arrows">
           <img class="arrows-img" src="{{Vite::asset('resources/images/arrows-left.png')}}" alt="arrows-left">
           <img class="arrows-img" src="{{Vite::asset('resources/images/arrows-right.png')}}" alt="arrows-right">
-        </div>
-        <div class="my_portfolio__text-left">
-          <p class="my_portfolio__text">AI DIGITAL CORPORATE PRESENTATION TEMPLATE</p>
-        </div>
-        <div class="my_portfolio__slide">
-          <div>
-            <img src="{{Vite::asset('resources/images/slide.png')}}" alt="slide">
-          </div>
-          <div class="my_portfolio__information">
-            <div class="my_portfolio__text-right">
-              <p class="my_portfolio_line">ux / ui design</p>
-              <p class="my_portfolio_line">development</p>
-              <p class="my_portfolio_line">adaptives for tablet and phone</p>
-              <p class="my_portfolio_line">animation support </p>
-            </div>
-            <button class="my_portfolio_btn">Посмотреть</button>
-          </div>
         </div>
       </div>
     </div>

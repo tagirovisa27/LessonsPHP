@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/qwe', [indexController::class, 'main'])->name(name:'qwe');
+Route::get('#my_portfolio', [indexController::class, 'main'])->name(name:'portfolio');
+
+Route::get('#about', [indexController::class, 'main'])->name(name:'about');
+
+Route::get('#discussions', [indexController::class, 'main'])->name(name:'contacts');
+
 Route::get('/', [indexController::class, 'main']);
+
+
