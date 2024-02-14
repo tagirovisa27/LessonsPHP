@@ -21,7 +21,7 @@ class IndexController extends Controller
     {
        $technologies = Technology::query()->with(['technologies'])->get();
 
-       $projects = Project::with('technologies')->get();
+       $projects = Project::query()->with(['technologies'])->get();
 
        return view('main', [
        'menu' => $this->menuService->getMenu(),
@@ -44,7 +44,7 @@ class IndexController extends Controller
 
         Storage::disk('public')->put($filePath, $image);
 
-        $fileUrl = Storage::disk('public')->url($filePath); //url
+        $fileUrl = Storage::disk('public')->url($filePath); //url не работает
 
         $project = Project::query()->create([
         'name' => $request->input('name'),

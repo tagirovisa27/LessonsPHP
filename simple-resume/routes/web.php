@@ -21,5 +21,3 @@ Route::get('#about', [indexController::class, 'main'])->name(name:'about');
 Route::get('#discussions', [indexController::class, 'main'])->name(name:'contacts');
 
 Route::get('/', [indexController::class, 'main']);
-
-

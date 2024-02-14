@@ -24,11 +24,11 @@
         <div>
           <img src="{{$project->image_url}}" alt="slide">
           </div>
-         <div class="my_portfolio__information">
+           <div class="my_portfolio__information">
              @foreach ($project->technologies as $technology)
-         <div class="my_portfolio__text-right">
+           <div class="my_portfolio__text-right">
               <p class="my_portfolio_line">{{$technology->name}}</p>
-            </div>
+           </div>
              @endforeach
               <button class="my_portfolio_btn">Посмотреть</button>
             </div>
