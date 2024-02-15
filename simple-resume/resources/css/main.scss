@@ -1,28 +1,28 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Inter', sans-serif; 
+    font-family: 'Inter', sans-serif;
  }
 
  .bg-blue {
     background-color: #313A5F;
  }
- 
+
  html {
     scroll-behavior: smooth;
  }
- 
+
  .wrapper {
     margin-inline: auto;
     width: 1120px;
  }
- 
+
  nav {
     display: flex;
     gap: 40px;
     padding-top: 46px;
  }
- 
+
  nav a {
     display: block;
     color: #FFF;
@@ -41,7 +41,7 @@
     gap: 100px;
     padding: 95px 0px 205px 0px;
  }
- 
+
  .introduction__title {
     color: #FFF;
     font-family: Inter;
@@ -51,7 +51,7 @@
     line-height: normal;
     margin-bottom: 40px;
  }
- 
+
  .introduction__text {
     width: 440px;
     color: #FFF;
@@ -60,34 +60,34 @@
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
-    line-height: 136.295%; 
+    line-height: 136.295%;
  }
- 
+
  .introduction_img {
     width: 475px;
  }
- 
+
  .my_portfolio {
     position: relative;
     margin: 150px 0px 150px 0px;
  }
- 
+
  .my_portfolio__slide {
     display: flex;
     justify-content: space-between;
     gap: 75px;
  }
- 
+
  .my_portfolio__title {
     color: #000;
-    font-family: Inter; 
+    font-family: Inter;
     font-size: 74px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     margin-bottom: 100px;
  }
- 
+
  .my_portfolio__arrows {
     display: flex;
     align-items: center;
@@ -96,7 +96,7 @@
     gap: 24px;
     cursor: pointer;
  }
- 
+
  .my_portfolio__text {
     width: 570px;
     color: #000;
@@ -107,7 +107,7 @@
     line-height: normal;
     margin-bottom: 90px;
  }
- 
+
  .my_portfolio__text-right {
     color: #000;
     font-family: Inter;
@@ -117,12 +117,12 @@
     line-height: normal;
     margin-bottom: 70px;
  }
- 
+
  .my_portfolio_line {
     border-bottom: 2px solid #313A5F;
     margin-bottom: 33px;
  }
- 
+
  .my_portfolio_btn {
     color: #FFF;
     font-family: Inter;
@@ -136,11 +136,11 @@
     cursor: pointer;
     border: none;
  }
- 
+
  .my_portfolio_btn:hover {
     background-color: #414C79;
  }
- 
+
  .about {
    display: flex;
    align-items: center;
@@ -148,7 +148,7 @@
    padding-top: 55px;
    gap: 95px;
  }
- 
+
  .about__title {
     color: #FFF;
     font-family: Inter;
@@ -158,7 +158,7 @@
     line-height: normal;
     margin-bottom: 100px;
  }
- 
+
  .about__text {
     width: 550px;
     color: #FFF;
@@ -167,14 +167,14 @@
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
-    line-height: 136.295%; 
+    line-height: 136.295%;
     margin-bottom: 150px;
  }
- 
+
  .discussions {
     margin-top: 150px;
  }
- 
+
  .discussions__title {
     color: #000;
     font-family: Inter;
@@ -185,7 +185,7 @@
     text-align: center;
     margin-bottom: 100px;
  }
- 
+
  .discussions_text {
     margin: auto;
     width: 485px;
@@ -198,7 +198,7 @@
     line-height: normal;
     margin-bottom: 50px;
  }
- 
+
  .discussions_text-contact {
     width: 555px;
     color: #000;
@@ -211,12 +211,12 @@
     margin: auto;
     margin-bottom: 100px;
  }
- 
+
  .form {
     display: flex;
     justify-content: center;
  }
- 
+
  input {
     width: 750px;
     padding: 20px 0px 20px 40px;
@@ -231,7 +231,7 @@
     line-height: normal;
     margin: 10px 0px 33px 0px;
  }
- 
+
  .form_contacts__btn {
     width: 750px;
     display: flex;
@@ -253,18 +253,18 @@
     cursor: pointer;
     border: none;
  }
- 
+
  .form_contacts__btn:hover {
     background-color: #414C79;
  }
- 
+
  .footer_contacts {
     display: flex;
     justify-content: center;
     gap: 155px;
     margin-bottom: 68px;
  }
- 
+
  .network {
     color: #000;
     font-family: Inter;
@@ -274,3 +274,15 @@
     line-height: normal;
     text-decoration: none;
  }
+
+ .error {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+    color: red;
+    font-size: 18px;
+ }
+
+ .invalid {
+    border: 1px solid red;
+}

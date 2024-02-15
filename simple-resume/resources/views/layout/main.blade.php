@@ -8,9 +8,9 @@
    @vite('resources/css/main.scss')
 </head>
 <body>
-@include('layout.nav')  
-@yield('content')   
-@include('layout.footer')  
+@include('layout.nav')
+@yield('content')
+@include('layout.footer')
 @vite('resources/js/app.js')
 </body>
 </html>

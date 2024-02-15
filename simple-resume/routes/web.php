@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\indexController;
 use Illuminate\Support\Facades\Route;
+use TCG\Voyager\Facades\Voyager;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +24,6 @@ Route::get('#about', [indexController::class, 'main'])->name(name:'about');
 Route::get('#discussions', [indexController::class, 'main'])->name(name:'contacts');
 
 Route::get('/', [indexController::class, 'main']);
+
+
+

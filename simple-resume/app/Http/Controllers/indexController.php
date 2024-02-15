@@ -19,38 +19,14 @@ class IndexController extends Controller
     }
       public function main()
     {
-       $technologies = Technology::query()->with(['technologies'])->get();
-
-       $projects = Project::query()->with(['technologies'])->get();
 
        return view('main', [
        'menu' => $this->menuService->getMenu(),
-       'projects' => $projects,
       ]);
     }
 
     public function form()
     {
         return view('layout.form');
-    }
-
-    public function addProjects(Request $request)
-    {
-        $image = $request->file('image');
-
-        $filePath = "/images/projects";
-
-        $fileName = sprintf("%s_%s", time(), $image->getClientOriginalName());
-
-        Storage::disk('public')->put($filePath, $image);
-
-        $fileUrl = Storage::disk('public')->url($filePath); //url не работает
-
-        $project = Project::query()->create([
-        'name' => $request->input('name'),
-        'image_url' => $fileUrl
-        ]);
-
-       return response()->json($project);
     }
 }
